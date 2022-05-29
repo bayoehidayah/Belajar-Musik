@@ -10,9 +10,14 @@
 
     <color name="mainBackground">#363A66</color>
     <color name="secondBackground">#383D6D</color>
+    <color name="thirdBackground">#404577</color>
 
     <color name="mainTextColor">#FFFFFF</color>
     <color name="secondTextColor">#E2E2E2</color>
+    <color name="thirdTextColor">#9E7E56</color>
 
     <color name="buttonColor">#A940FF</color>
+
+    <color name="rippleBackground">#293366</color>
+    <color name="rippleButton">#9008FE</color>
 </resources>

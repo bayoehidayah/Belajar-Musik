@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".AboutActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_back"
+        android:backgroundTint="@color/mainBackground"
+        android:tint="@android:color/white"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:fabSize="mini"/>
+
+    <TextView
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Hasil Quiz"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/icon_check"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:backgroundTint="@color/thirdBackground"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:orientation="vertical">
+
+                <TableRow android:padding="13dip">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Total Pertanyaan"/>
+
+                    <TextView
+                        android:layout_marginRight="35dp"
+                        android:layout_column="1"
+                        android:textColor="@color/white"
+                        android:id="@+id/totalPertanyaan"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="10"/>
+                </TableRow>
+
+                <TableRow android:padding="13dip">
+                    <TextView
+                        android:layout_column="0"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Jawaban Benar"/>
+
+                    <TextView
+                        android:layout_marginRight="35dp"
+                        android:layout_column="1"
+                        android:textColor="@color/white"
+                        android:id="@+id/totalJawabanBenar"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="10"/>
+                </TableRow>
+                <TableRow android:padding="13dip">
+                    <TextView
+                        android:layout_column="0"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Jawaban Salah"/>
+
+                    <TextView
+                        android:layout_marginRight="35dp"
+                        android:layout_column="1"
+                        android:textColor="@color/white"
+                        android:id="@+id/totalJawabanSalah"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="10"/>
+                </TableRow>
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnD"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:backgroundTint="@color/thirdBackground"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:orientation="vertical">
+
+                <TableRow android:padding="13dip">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Total Score"/>
+
+                    <TextView
+                        android:layout_marginRight="35dp"
+                        android:layout_column="1"
+                        android:textColor="@color/white"
+                        android:id="@+id/totalScore"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="10"/>
+                </TableRow>
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:id="@+id/btnDone"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:textStyle="bold"
+            android:textColor="@color/secondTextColor"
+            android:text="Selesai"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
